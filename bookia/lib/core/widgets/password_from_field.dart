@@ -26,8 +26,12 @@ class _PasswordFromFieldState extends State<PasswordFromField> {
       controller: widget.controller,
       obscureText: obscureText,
 
+<<<<<<< HEAD
       validator:
           widget.validator ??
+=======
+      validator: widget.validator ??
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f
           (input) {
             if (input == null || input.isEmpty) {
               return 'Please enter your password';
@@ -46,9 +50,19 @@ class _PasswordFromFieldState extends State<PasswordFromField> {
               obscureText = !obscureText;
             });
           },
+<<<<<<< HEAD
           icon: Icon(obscureText ? Icons.visibility_off : Icons.remove_red_eye),
+=======
+          icon: Icon(
+            obscureText ? Icons.visibility_off : Icons.remove_red_eye,
+          ),
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f
         ),
       ),
     );
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f

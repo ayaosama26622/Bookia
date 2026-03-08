@@ -20,9 +20,18 @@ class CustomSvgPicture extends StatelessWidget {
       path,
       width: width,
       height: height,
+<<<<<<< HEAD
       colorFilter: color != null
           ? ColorFilter.mode(color!, BlendMode.srcIn)
           : null,
     );
   }
 }
+=======
+    colorFilter: color != null
+    ?ColorFilter.mode(color!, BlendMode.srcIn):
+    null,  
+    );
+  }
+}
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f

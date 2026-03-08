@@ -14,6 +14,7 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   @override
+<<<<<<< HEAD
   void initState() {
     super.initState();
     Future.delayed(const Duration(seconds: 3), () {
@@ -36,3 +37,27 @@ class _SplashScreenState extends State<SplashScreen> {
     );
   }
 }
+=======
+  void initState(){
+    super.initState();
+    Future.delayed(const Duration(seconds: 3) , (){
+      pushReplacement(context, WelcomeScreen());
+    });
+
+  }
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body:Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            CustomSvgPicture(path: AppImage.logo , width: 250,),
+            Gap(10),
+            Text("Order Your Book Now!" , style: TextStyle(fontSize: 18),)
+          ],
+        ),
+      )
+    );
+  }
+}
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f

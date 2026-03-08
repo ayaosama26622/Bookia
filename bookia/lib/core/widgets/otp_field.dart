@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 import 'package:bookia/core/styles/colors.dart';
 import 'package:flutter/material.dart';
+=======
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f
 import 'package:pinput/pinput.dart';
 import 'package:smart_auth/smart_auth.dart';
 
 class OtpField extends StatefulWidget {
+<<<<<<< HEAD
 
   final TextEditingController controller;
 
@@ -11,15 +17,25 @@ class OtpField extends StatefulWidget {
     super.key,
     required this.controller,
   });
+=======
+  const OtpField({super.key});
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f
 
   @override
   State<OtpField> createState() => _OtpFieldState();
 }
 
 class _OtpFieldState extends State<OtpField> {
+<<<<<<< HEAD
 
   late final SmsRetriever smsRetriever;
   final FocusNode focusNode = FocusNode();
+=======
+  late final SmsRetriever smsRetriever;
+  final TextEditingController pinController = TextEditingController();
+  final FocusNode focusNode = FocusNode();
+  final GlobalKey<FormState> formKey = GlobalKey<FormState>();
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f
 
   @override
   void initState() {
@@ -29,12 +45,17 @@ class _OtpFieldState extends State<OtpField> {
 
   @override
   void dispose() {
+<<<<<<< HEAD
+=======
+    pinController.dispose();
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f
     focusNode.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
 
     final defaultPinTheme = PinTheme(
       width: 55,
@@ -62,6 +83,33 @@ class _OtpFieldState extends State<OtpField> {
         smsRetriever: smsRetriever,
         defaultPinTheme: defaultPinTheme,
 
+=======
+   
+    final defaultPinTheme = PinTheme(
+      width: 56,
+      height: 56,
+      textStyle: const TextStyle(
+        fontSize: 22,
+        fontWeight: FontWeight.w600,
+        color: Colors.black, 
+      ),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(12),
+        color: Colors.grey[300], 
+      ),
+    );
+
+    return Form(
+      key: formKey,
+      child: Pinput(
+        length: 6,
+        smsRetriever: smsRetriever,
+        controller: pinController,
+        focusNode: focusNode,
+        defaultPinTheme: defaultPinTheme,
+
+        
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f
         validator: (value) {
           if (value == null || value.length < 6) {
             return "Enter full code";
@@ -70,6 +118,7 @@ class _OtpFieldState extends State<OtpField> {
         },
 
         onCompleted: (pin) {
+<<<<<<< HEAD
           print("OTP Code: $pin");
         },
 
@@ -97,6 +146,22 @@ class _OtpFieldState extends State<OtpField> {
               color: Colors.red,
               width: 2,
             ),
+=======
+          print("OTP: $pin");
+        },
+
+        
+        focusedPinTheme: defaultPinTheme.copyWith(
+          decoration: defaultPinTheme.decoration!.copyWith(
+            color: Colors.grey[400],
+          ),
+        ),
+
+        
+        errorPinTheme: defaultPinTheme.copyWith(
+          decoration: defaultPinTheme.decoration!.copyWith(
+            color: Colors.red[100],
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f
           ),
         ),
       ),
@@ -105,9 +170,13 @@ class _OtpFieldState extends State<OtpField> {
 }
 
 class SmsRetrieverImpl implements SmsRetriever {
+<<<<<<< HEAD
 
   const SmsRetrieverImpl(this.smartAuth);
 
+=======
+  const SmsRetrieverImpl(this.smartAuth);
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f
   final SmartAuth smartAuth;
 
   @override
@@ -123,5 +192,9 @@ class SmsRetrieverImpl implements SmsRetriever {
 
   @override
   bool get listenForMultipleSms => false;
+<<<<<<< HEAD
 
 }
+=======
+}
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f
