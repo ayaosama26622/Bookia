@@ -1,0 +1,22 @@
+import 'package:bookia/core/service/dio/dio_provider.dart';
+import 'package:bookia/core/styles/themes.dart';
+import 'package:bookia/feature/intro/splash/splash_screen.dart';
+import 'package:flutter/material.dart';
+
+void main() {
+  DioProvider.inti();
+  runApp(const MainApp());
+}
+
+class MainApp extends StatelessWidget {
+  const MainApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: AppThemes.lightTheme,
+      home: SplashScreen(),
+    );
+  }
+}
