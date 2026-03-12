@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import 'dart:developer';
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
 
 import 'package:bookia/core/constants/image_app.dart';
 import 'package:bookia/core/function/navigation.dart';
@@ -11,7 +15,10 @@ import 'package:bookia/core/widgets/main_button.dart';
 import 'package:bookia/core/widgets/password_from_field.dart';
 import 'package:bookia/feature/auth/presentation/cubit/auth_cubit.dart';
 import 'package:bookia/feature/auth/presentation/cubit/auth_state.dart';
+<<<<<<< HEAD
 import 'package:bookia/feature/main/main_app_screen.dart';
+=======
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gap/gap.dart';
@@ -63,12 +70,20 @@ class _registerBoby extends StatelessWidget {
     return BlocConsumer<AuthCubit, AuthState>(
       listener: (context, state) {
         if (state is AuthSuccessState){
+<<<<<<< HEAD
         pushToBase(context, MainAppScreen());
         }else if (state is AuthErrorState){
           pop(context);
           showErrorDialog(context, state.message);
         }
         
+=======
+        log("success");
+        }
+        else if (state is AuthErrorState){
+          showErrorDialog(context , state.message);
+        }
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
       },
       builder: (context, state) {
         var cubit = context.read<AuthCubit>();

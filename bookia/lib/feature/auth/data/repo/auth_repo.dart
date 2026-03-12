@@ -2,7 +2,10 @@ import 'dart:developer';
 
 import 'package:bookia/core/service/dio/apis.dart';
 import 'package:bookia/core/service/dio/dio_provider.dart';
+<<<<<<< HEAD
 import 'package:bookia/core/service/local/shared_pref.dart';
+=======
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
 import 'package:bookia/feature/auth/data/models/register_paremeter.dart';
 import 'package:bookia/feature/auth/data/models/register_response/auth_response.dart';
 import 'package:dio/dio.dart';
@@ -11,7 +14,10 @@ class AuthRepo {
 
   static Future<AuthResponse?> register(RegisterParemeter params) async {
     try {
+<<<<<<< HEAD
       log(params.toString().toString());
+=======
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
       var response = await DioProvider.post(
         endpoint: Apis.register,
         data: params.toJson()
@@ -19,8 +25,11 @@ class AuthRepo {
 
       if (response.statusCode == 201) {
         var data = AuthResponse.fromJson(response.data);
+<<<<<<< HEAD
         SharedPref.setToken(data.data?.token ?? '');
         SharedPref.setUserInfo(data.data?.user);
+=======
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
         return data;
       } else {
         return null;
@@ -40,8 +49,11 @@ class AuthRepo {
 
       if (response.statusCode == 200) {
         var data = AuthResponse.fromJson(response.data);
+<<<<<<< HEAD
         SharedPref.setToken(data.data?.token ?? '');
         SharedPref.setUserInfo(data.data?.user);
+=======
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
         return data;
       } else {
         return null;

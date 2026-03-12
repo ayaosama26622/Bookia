@@ -4,8 +4,18 @@ import 'package:bookia/core/styles/colors.dart';
 import 'package:bookia/core/styles/text.dart' show TextStyles;
 import 'package:bookia/core/widgets/custom_svg_picture.dart';
 import 'package:bookia/core/widgets/main_button.dart';
+<<<<<<< HEAD
 import 'package:bookia/feature/auth/presentation/page/login_screen.dart';
 import 'package:bookia/feature/auth/presentation/page/signup_screen.dart';
+=======
+<<<<<<< HEAD
+import 'package:bookia/feature/auth/presentation/page/login_screen.dart';
+import 'package:bookia/feature/auth/presentation/page/signup_screen.dart';
+=======
+import 'package:bookia/feature/auth/page/login_screen.dart';
+import 'package:bookia/feature/auth/page/signup_screen.dart';
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -18,10 +28,23 @@ class WelcomeScreen extends StatelessWidget {
       body: Stack(
         children: [
           Image.asset(
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
             AppImage.imagewelcome,
             fit: BoxFit.cover,
             width: double.infinity,
             height: double.infinity,
+<<<<<<< HEAD
+=======
+=======
+          AppImage.imagewelcome,
+          fit: BoxFit.cover,
+          width: double.infinity,
+          height: double.infinity,
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
           ),
           Positioned(
             top: 0,
@@ -30,6 +53,10 @@ class WelcomeScreen extends StatelessWidget {
             left: 16,
             child: Column(
               children: [
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
                 Spacer(flex: 2),
                 CustomSvgPicture(path: AppImage.logo),
                 Gap(16),
@@ -41,6 +68,19 @@ class WelcomeScreen extends StatelessWidget {
                   },
                   text: "Login",
                 ),
+<<<<<<< HEAD
+=======
+=======
+                Spacer(flex: 2,),
+                CustomSvgPicture(path: AppImage.logo),
+                Gap(16),
+                Text("Order Your Book Now!" , style: TextStyles.title,),
+                Spacer(flex: 4,),
+                MainButton(onPressed: () {
+                  pushReplacement(context, LoginScreen());
+                }, text: "Login"),
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
                 Gap(16),
                 MainButton(
                   beColor: AppColor.backgroundColor,
@@ -48,6 +88,10 @@ class WelcomeScreen extends StatelessWidget {
                   borderColor: AppColor.darkgrayColor,
                   onPressed: () {
                     pushReplacement(context, SignupScreen());
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
                   },
                   text: "Register",
                 ),
@@ -60,3 +104,19 @@ class WelcomeScreen extends StatelessWidget {
     );
   }
 }
+<<<<<<< HEAD
+=======
+=======
+                  }, text: "Register"),
+                Spacer(flex: 1,),
+              ],
+            ),
+          )
+        ]
+        
+      ),
+    );
+  }
+}
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce

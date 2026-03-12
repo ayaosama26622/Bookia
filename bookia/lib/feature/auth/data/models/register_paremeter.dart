@@ -22,6 +22,7 @@ class RegisterParemeter {
     'password_confirmation': passwordConfirmation,
     "otp":otp
   };
+<<<<<<< HEAD
 
 @override
 String toString() {
@@ -34,3 +35,6 @@ otp: $otp
 ''';
 }
 }
+=======
+}
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
