@@ -5,16 +5,46 @@ class BookModel {
   final String title;
   final String price;
 
+<<<<<<< HEAD
   BookModel({required this.image, required this.title, required this.price});
 }
 
 List<BookModel> bestSellerBooks = [
   BookModel(image: AppImage.best1, title: "The Republic", price: "₹285"),
+=======
+  BookModel({
+    required this.image,
+    required this.title,
+    required this.price,
+  });
+}
+
+List<BookModel> bestSellerBooks = [
+  BookModel(
+    image: AppImage.best1,
+    title: "The Republic",
+    price: "₹285",
+  ),
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
   BookModel(
     image: AppImage.best2,
     title: "The Republidfdfddfgc",
     price: "₹285",
   ),
+<<<<<<< HEAD
   BookModel(image: AppImage.best2, title: "The Republic", price: "₹285"),
   BookModel(image: AppImage.best1, title: "The Republic", price: "₹285"),
 ];
+=======
+  BookModel(
+    image: AppImage.best2,
+    title: "The Republic",
+    price: "₹285",
+  ),
+  BookModel(
+    image: AppImage.best1,
+    title: "The Republic",
+    price: "₹285",
+  ),
+];
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4

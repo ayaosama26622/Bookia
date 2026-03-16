@@ -9,6 +9,7 @@ abstract class Apis {
 
   static const String forget = "/forget";
 
+<<<<<<< HEAD
   static const String verifyOtp = "/verifyOtp";
 
   static const String resetPassword = "/resetPassword";
@@ -16,4 +17,11 @@ abstract class Apis {
   static const String sliders = "/sliders";
 
   static const String productsBestseller = "/products_bestseller";
+=======
+  static const String verifyOtp= "/verifyOtp";
+
+  static const String resetPassword= "/resetPassword";
+
+  
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
 }

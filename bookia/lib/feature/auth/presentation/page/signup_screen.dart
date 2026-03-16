@@ -1,7 +1,18 @@
+<<<<<<< HEAD
 import 'package:bookia/core/constants/image_app.dart';
 import 'package:bookia/core/function/navigation.dart';
 import 'package:bookia/core/function/validation.dart';
 import 'package:bookia/core/routes/routes.dart';
+=======
+<<<<<<< HEAD
+=======
+import 'dart:developer';
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
+
+import 'package:bookia/core/constants/image_app.dart';
+import 'package:bookia/core/function/navigation.dart';
+import 'package:bookia/core/function/validation.dart';
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
 import 'package:bookia/core/styles/colors.dart';
 import 'package:bookia/core/styles/text.dart' show TextStyles;
 import 'package:bookia/core/widgets/custom_svg_picture.dart';
@@ -11,6 +22,13 @@ import 'package:bookia/core/widgets/main_button.dart';
 import 'package:bookia/core/widgets/password_from_field.dart';
 import 'package:bookia/feature/auth/presentation/cubit/auth_cubit.dart';
 import 'package:bookia/feature/auth/presentation/cubit/auth_state.dart';
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+import 'package:bookia/feature/main/main_app_screen.dart';
+=======
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gap/gap.dart';
@@ -61,12 +79,30 @@ class _registerBoby extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocConsumer<AuthCubit, AuthState>(
       listener: (context, state) {
+<<<<<<< HEAD
         if (state is AuthSuccessState) {
           pushToBase(context, Routes.main);
         } else if (state is AuthErrorState) {
           pop(context);
           showErrorDialog(context, state.message);
         }
+=======
+        if (state is AuthSuccessState){
+<<<<<<< HEAD
+        pushToBase(context, MainAppScreen());
+        }else if (state is AuthErrorState){
+          pop(context);
+          showErrorDialog(context, state.message);
+        }
+        
+=======
+        log("success");
+        }
+        else if (state is AuthErrorState){
+          showErrorDialog(context , state.message);
+        }
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
       },
       builder: (context, state) {
         var cubit = context.read<AuthCubit>();
@@ -83,7 +119,11 @@ class _registerBoby extends StatelessWidget {
                     style: TextStyles.headline,
                   ),
                   const Gap(40),
+<<<<<<< HEAD
 
+=======
+              
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
                   CustomTextFromField(
                     controller: cubit.nameController,
                     hintText: "Username",
@@ -96,7 +136,11 @@ class _registerBoby extends StatelessWidget {
                     },
                   ),
                   const Gap(16),
+<<<<<<< HEAD
 
+=======
+              
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
                   CustomTextFromField(
                     controller: cubit.emailController,
                     hintText: "Email",
@@ -111,13 +155,21 @@ class _registerBoby extends StatelessWidget {
                     },
                   ),
                   const Gap(16),
+<<<<<<< HEAD
 
+=======
+              
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
                   PasswordFromField(
                     controller: cubit.passwordController,
                     hintText: "Password",
                   ),
                   const Gap(16),
+<<<<<<< HEAD
 
+=======
+              
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
                   PasswordFromField(
                     controller: cubit.confirmPasswordController,
                     hintText: "Confirm password",
@@ -131,7 +183,12 @@ class _registerBoby extends StatelessWidget {
                     },
                   ),
                   const Gap(40),
+<<<<<<< HEAD
 
+=======
+                  
+              
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
                   MainButton(
                     onPressed: () {
                       if (cubit.formKey.currentState!.validate()) {
@@ -140,7 +197,11 @@ class _registerBoby extends StatelessWidget {
                     },
                     text: "Register",
                   ),
+<<<<<<< HEAD
 
+=======
+                  
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
                   const Gap(32),
                 ],
               ),

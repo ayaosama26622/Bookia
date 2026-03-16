@@ -2,7 +2,11 @@ import 'package:bookia/core/constants/image_app.dart';
 import 'package:bookia/core/function/navigation.dart';
 import 'package:bookia/core/function/validation.dart';
 import 'package:bookia/core/styles/colors.dart';
+<<<<<<< HEAD
 import 'package:bookia/core/styles/text.dart';
+=======
+import 'package:bookia/core/styles/text.dart' ;
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
 import 'package:bookia/core/widgets/custom_svg_picture.dart';
 import 'package:bookia/core/widgets/custom_text_from_field.dart';
 import 'package:bookia/core/widgets/dialoge.dart';
@@ -31,7 +35,13 @@ class ForgetPassword extends StatelessWidget {
         ),
         body: BlocConsumer<AuthCubit, AuthState>(
           listener: (context, state) {
+<<<<<<< HEAD
             if (state is ForgetPasswordSuccessState) {
+=======
+
+            if (state is ForgetPasswordSuccessState) {
+
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
               showDialog(
                 context: context,
                 builder: (context) => const AlertDialog(
@@ -39,11 +49,22 @@ class ForgetPassword extends StatelessWidget {
                   content: Text("Reset link sent to your email"),
                 ),
               );
+<<<<<<< HEAD
             } else if (state is AuthErrorState) {
+=======
+
+            }
+
+            else if (state is AuthErrorState) {
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
               showErrorDialog(context, state.message);
             }
           },
           builder: (context, state) {
+<<<<<<< HEAD
+=======
+
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
             var cubit = context.read<AuthCubit>();
 
             return Padding(
@@ -54,15 +75,27 @@ class ForgetPassword extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+<<<<<<< HEAD
                       Text("Forgot Password?", style: TextStyles.headline),
+=======
+
+                      Text(
+                        "Forgot Password?",
+                        style: TextStyles.headline,
+                      ),
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
 
                       const Gap(10),
 
                       Text(
                         "Don't worry! It occurs. Please enter the email address linked with your account.",
+<<<<<<< HEAD
                         style: TextStyles.body.copyWith(
                           color: AppColor.grayColor,
                         ),
+=======
+                        style: TextStyles.body.copyWith(color: AppColor.grayColor),
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
                       ),
 
                       const Gap(40),
@@ -72,6 +105,10 @@ class ForgetPassword extends StatelessWidget {
                         hintText: "Enter your email",
                         keyboardType: TextInputType.emailAddress,
                         validator: (value) {
+<<<<<<< HEAD
+=======
+
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
                           if (value!.isEmpty) {
                             return "Please enter your email";
                           }
@@ -88,12 +125,24 @@ class ForgetPassword extends StatelessWidget {
 
                       MainButton(
                         onPressed: () {
+<<<<<<< HEAD
                           if (cubit.formKey.currentState!.validate()) {
                             cubit.forget();
                           }
                         },
                         text: "Send Code",
                       ),
+=======
+
+                          if (cubit.formKey.currentState!.validate()) {
+                            cubit.forget();
+                          }
+
+                        },
+                        text: "Send Code",
+                      ),
+
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
                     ],
                   ),
                 ),
@@ -107,7 +156,15 @@ class ForgetPassword extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+<<<<<<< HEAD
               Text("Remember password?", style: TextStyles.body),
+=======
+
+              Text(
+                "Remember password?",
+                style: TextStyles.body,
+              ),
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
 
               const Gap(4),
 
@@ -117,13 +174,26 @@ class ForgetPassword extends StatelessWidget {
                 },
                 child: Text(
                   "Login",
+<<<<<<< HEAD
                   style: TextStyles.body.copyWith(color: AppColor.primrycolor),
                 ),
               ),
+=======
+                  style: TextStyles.body.copyWith(
+                    color: AppColor.primrycolor,
+                  ),
+                ),
+              ),
+
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
             ],
           ),
         ),
       ),
     );
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4

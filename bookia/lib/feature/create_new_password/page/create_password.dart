@@ -1,7 +1,11 @@
 import 'package:bookia/core/constants/image_app.dart';
 import 'package:bookia/core/function/navigation.dart';
 import 'package:bookia/core/styles/colors.dart';
+<<<<<<< HEAD
 import 'package:bookia/core/styles/text.dart';
+=======
+import 'package:bookia/core/styles/text.dart' ;
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
 import 'package:bookia/core/widgets/custom_svg_picture.dart';
 import 'package:bookia/core/widgets/dialoge.dart';
 import 'package:bookia/core/widgets/main_button.dart';
@@ -30,7 +34,13 @@ class CreatePassword extends StatelessWidget {
         ),
         body: BlocConsumer<AuthCubit, AuthState>(
           listener: (context, state) {
+<<<<<<< HEAD
             if (state is ForgetPasswordSuccessState) {
+=======
+
+            if (state is ForgetPasswordSuccessState) {
+
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
               showDialog(
                 context: context,
                 builder: (context) => const AlertDialog(
@@ -38,11 +48,22 @@ class CreatePassword extends StatelessWidget {
                   content: Text("Reset link sent to your email"),
                 ),
               );
+<<<<<<< HEAD
             } else if (state is AuthErrorState) {
+=======
+
+            }
+
+            else if (state is AuthErrorState) {
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
               showErrorDialog(context, state.message);
             }
           },
           builder: (context, state) {
+<<<<<<< HEAD
+=======
+
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
             var cubit = context.read<AuthCubit>();
 
             return Padding(
@@ -53,20 +74,33 @@ class CreatePassword extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+<<<<<<< HEAD
                       Text("Create new password", style: TextStyles.headline),
+=======
+
+                      Text(
+                        "Create new password",
+                        style: TextStyles.headline,
+                      ),
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
 
                       const Gap(10),
 
                       Text(
                         "Your new password must be unique from those previously used.",
+<<<<<<< HEAD
                         style: TextStyles.body.copyWith(
                           color: AppColor.grayColor,
                         ),
+=======
+                        style: TextStyles.body.copyWith(color: AppColor.grayColor),
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
                       ),
 
                       const Gap(40),
 
                       PasswordFromField(
+<<<<<<< HEAD
                         controller: cubit.passwordController,
                         hintText: "New Password",
                       ),
@@ -84,17 +118,49 @@ class CreatePassword extends StatelessWidget {
                           return null;
                         },
                       ),
+=======
+                      controller: cubit.passwordController,
+                      hintText: "New Password",
+                    
+                  ),
+                      const Gap(16),
+              
+                    PasswordFromField(
+                    controller: cubit.confirmPasswordController,
+                    hintText: "Confirm password",
+                    validator: (value) {
+                      if (value == null || value.isEmpty) {
+                        return "Please confirm your password";
+                      } else if (value != cubit.passwordController.text) {
+                        return "Passwords do not match";
+                      }
+                      return null;
+                    },
+                  ),
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
 
                       const Gap(32),
 
                       MainButton(
                         onPressed: () {
+<<<<<<< HEAD
                           if (cubit.formKey.currentState!.validate()) {
                             cubit.forget();
                           }
                         },
                         text: "Reset Password",
                       ),
+=======
+
+                          if (cubit.formKey.currentState!.validate()) {
+                            cubit.forget();
+                          }
+
+                        },
+                        text: "Reset Password",
+                      ),
+
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
                     ],
                   ),
                 ),
@@ -102,7 +168,15 @@ class CreatePassword extends StatelessWidget {
             );
           },
         ),
+<<<<<<< HEAD
       ),
     );
   }
 }
+=======
+
+      ),
+    );
+  }
+}
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4

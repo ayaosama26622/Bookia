@@ -7,6 +7,7 @@ environment:
   sdk: ^3.10.8
 
 dependencies:
+<<<<<<< HEAD
   carousel_slider: ^5.1.2
   dio: ^5.9.2
   flutter:
@@ -22,6 +23,33 @@ dependencies:
   smart_auth: ^3.2.0
   smooth_page_indicator: ^2.0.1
   
+=======
+  flutter:
+    sdk: flutter
+  flutter_svg: ^2.2.3
+  gap: ^3.0.1
+<<<<<<< HEAD
+  dio: ^5.9.2
+  lottie: ^3.3.2 
+  shared_preferences: ^2.5.4
+  carousel_slider: ^5.1.2
+  smooth_page_indicator: ^2.0.1
+=======
+<<<<<<< HEAD
+  dio: ^5.9.2
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
+  
+  pinput: ^6.0.2
+  smart_auth: ^3.2.0
+  flutter_bloc: ^9.1.1
+<<<<<<< HEAD
+=======
+=======
+  pinput: ^6.0.2
+  smart_auth: ^3.2.0
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
 
 dev_dependencies:
   flutter_lints: ^6.0.0

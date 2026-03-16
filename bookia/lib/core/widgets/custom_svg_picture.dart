@@ -9,7 +9,10 @@ class CustomSvgPicture extends StatelessWidget {
     this.height,
     this.width,
   });
+<<<<<<< HEAD
 
+=======
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
   final String path;
   final Color? color;
   final double? width;
@@ -17,6 +20,7 @@ class CustomSvgPicture extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
     Widget svg = SvgPicture.asset(
       path,
       width: width,
@@ -33,3 +37,30 @@ class CustomSvgPicture extends StatelessWidget {
     return svg;
   }
 }
+=======
+    return SvgPicture.asset(
+      path,
+      width: width,
+      height: height,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
+      colorFilter: color != null
+          ? ColorFilter.mode(color!, BlendMode.srcIn)
+          : null,
+    );
+  }
+}
+<<<<<<< HEAD
+=======
+=======
+    colorFilter: color != null
+    ?ColorFilter.mode(color!, BlendMode.srcIn):
+    null,  
+    );
+  }
+}
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4

@@ -13,6 +13,7 @@ class MainAppScreen extends StatefulWidget {
 
 class _MainAppScreenState extends State<MainAppScreen> {
   int currentIndex = 0;
+<<<<<<< HEAD
   List<Widget> screen = [
     HomeScreen(),
     Center(child: Text("Wishlist")),
@@ -20,16 +21,30 @@ class _MainAppScreenState extends State<MainAppScreen> {
     Center(child: Text("Profile")),
   ];
 
+=======
+  List<Widget> screen =[
+    HomeScreen(),
+    Center(child: Text("Wishlist"),),
+    Center(child: Text("cart"),),
+    Center(child: Text("Profile"),),
+  ];
+  
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: currentIndex,
+<<<<<<< HEAD
         onTap: (index) {
+=======
+        onTap: (index){
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
           setState(() {
             currentIndex = index;
           });
         },
+<<<<<<< HEAD
         items: [
           BottomNavigationBarItem(
             icon: CustomSvgPicture(path: AppImage.home),
@@ -71,3 +86,46 @@ class _MainAppScreenState extends State<MainAppScreen> {
     );
   }
 }
+=======
+        items:[
+            BottomNavigationBarItem(
+              icon: CustomSvgPicture(path: AppImage.home) , 
+              activeIcon: CustomSvgPicture(
+                path: AppImage.home,
+                color: AppColor.primrycolor,
+                ),
+                label: "Home",
+              ),
+
+              BottomNavigationBarItem(
+              icon: CustomSvgPicture(path: AppImage.save) , 
+              activeIcon: CustomSvgPicture(
+                path: AppImage.save,
+                color: AppColor.primrycolor,
+                ),
+                label: "Wishlist"
+              ),
+
+              BottomNavigationBarItem(
+              icon: CustomSvgPicture(path: AppImage.cart) , 
+              activeIcon: CustomSvgPicture(
+                path: AppImage.cart,
+                color: AppColor.primrycolor,
+                ),
+                label: "Cart"
+              ),
+
+              BottomNavigationBarItem(
+              icon: CustomSvgPicture(path: AppImage.profile) , 
+              activeIcon: CustomSvgPicture(
+                path: AppImage.profile,
+                color: AppColor.primrycolor,
+                ),
+                label: "Profile"
+              ),
+        ]
+        ),
+    );
+  }
+}
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4

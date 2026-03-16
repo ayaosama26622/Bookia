@@ -9,7 +9,11 @@ class PasswordChangedScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+<<<<<<< HEAD
       backgroundColor: Colors.white,
+=======
+      backgroundColor: Colors.white, 
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(16),
@@ -21,6 +25,7 @@ class PasswordChangedScreen extends StatelessWidget {
                 width: 100,
                 height: 100,
                 fit: BoxFit.contain,
+<<<<<<< HEAD
                 placeholderBuilder: (context) =>
                     const CircularProgressIndicator(),
               ),
@@ -42,10 +47,45 @@ class PasswordChangedScreen extends StatelessWidget {
 
               const SizedBox(height: 30),
               MainButton(onPressed: () {}, text: "Back to Login"),
+=======
+                placeholderBuilder: (context) => const CircularProgressIndicator(),
+              ),
+          
+              const SizedBox(height: 30),
+          
+              const Text(
+                "Password Changed!",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 26,
+                ),
+              ),
+          
+              const SizedBox(height: 8),
+          
+              const Text(
+                "Your password has been changed\nsuccessfully.",
+                style: TextStyle(
+                  color: Color(0xFF8B96A5),
+                  fontSize: 16,
+                ),
+                textAlign: TextAlign.center,
+              ),
+          
+              const SizedBox(height: 30),
+              MainButton(
+              onPressed: () {},
+              text: "Back to Login",
+              ),
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
             ],
           ),
         ),
       ),
     );
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4

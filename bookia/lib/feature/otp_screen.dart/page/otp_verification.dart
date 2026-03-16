@@ -31,7 +31,13 @@ class OtpVerification extends StatelessWidget {
 
         body: BlocConsumer<AuthCubit, AuthState>(
           listener: (context, state) {
+<<<<<<< HEAD
             if (state is OtpSuccessState) {
+=======
+
+            if (state is OtpSuccessState) {
+
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
               showDialog(
                 context: context,
                 builder: (context) => const AlertDialog(
@@ -39,12 +45,26 @@ class OtpVerification extends StatelessWidget {
                   content: Text("OTP Verified Successfully"),
                 ),
               );
+<<<<<<< HEAD
             } else if (state is AuthErrorState) {
               showErrorDialog(context, state.message);
             }
           },
 
           builder: (context, state) {
+=======
+
+            }
+
+            else if (state is AuthErrorState) {
+              showErrorDialog(context, state.message);
+            }
+
+          },
+
+          builder: (context, state) {
+
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
             var cubit = context.read<AuthCubit>();
 
             return Padding(
@@ -55,7 +75,15 @@ class OtpVerification extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+<<<<<<< HEAD
                       Text("OTP Verification", style: TextStyles.headline),
+=======
+
+                      Text(
+                        "OTP Verification",
+                        style: TextStyles.headline,
+                      ),
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
 
                       const Gap(10),
 
@@ -68,7 +96,13 @@ class OtpVerification extends StatelessWidget {
 
                       const Gap(40),
 
+<<<<<<< HEAD
                       OtpField(controller: cubit.otpController),
+=======
+                      OtpField(
+                        controller: cubit.otpController,
+                      ),
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
 
                       const Gap(32),
 
@@ -76,12 +110,24 @@ class OtpVerification extends StatelessWidget {
                           ? const Center(child: CircularProgressIndicator())
                           : MainButton(
                               onPressed: () {
+<<<<<<< HEAD
                                 if (cubit.formKey.currentState!.validate()) {
                                   cubit.verifyOtp();
                                 }
                               },
                               text: "Verify",
                             ),
+=======
+
+                                if (cubit.formKey.currentState!.validate()) {
+                                  cubit.verifyOtp();
+                                }
+
+                              },
+                              text: "Verify",
+                            ),
+
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
                     ],
                   ),
                 ),
@@ -95,11 +141,20 @@ class OtpVerification extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+<<<<<<< HEAD
               Text("Didn’t receive code?", style: TextStyles.body),
+=======
+
+              Text(
+                "Didn’t receive code?",
+                style: TextStyles.body,
+              ),
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
 
               const Gap(4),
 
               GestureDetector(
+<<<<<<< HEAD
                 onTap: () {},
 
                 child: Text(
@@ -107,10 +162,28 @@ class OtpVerification extends StatelessWidget {
                   style: TextStyles.body.copyWith(color: AppColor.primrycolor),
                 ),
               ),
+=======
+                onTap: () {
+
+                },
+
+                child: Text(
+                  "Resend",
+                  style: TextStyles.body.copyWith(
+                    color: AppColor.primrycolor,
+                  ),
+                ),
+              ),
+
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
             ],
           ),
         ),
       ),
     );
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
