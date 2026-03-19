@@ -9,6 +9,10 @@ abstract class Apis {
 
   static const String forget = "/forget";
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
   static const String verifyOtp = "/verifyOtp";
 
   static const String resetPassword = "/resetPassword";
@@ -16,10 +20,20 @@ abstract class Apis {
   static const String sliders = "/sliders";
 
   static const String productsBestseller = "/products_bestseller";
+<<<<<<< HEAD
 
   static const String productsNew = "/products_new";
 
   static const wishlist = "/wishlist";
   static const addToWishlist = "/add_to_wishlist";
   static const removeFromWishlist = "/remove_from_wishlist";
+=======
+=======
+  static const String verifyOtp= "/verifyOtp";
+
+  static const String resetPassword= "/resetPassword";
+
+  
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
 }

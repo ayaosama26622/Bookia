@@ -12,14 +12,23 @@ class HomeCubit extends Cubit<HomeState> {
   List<Slider> sliders = [];
   List<Product> products = [];
 
+<<<<<<< HEAD
   int yourActiveIndex = 0;
+=======
+  int yourActiveIndex =0;
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
 
   Future<void> initLoad() async {
     emit(HomeLoadingState());
 
     var responses = await Future.wait([
+<<<<<<< HEAD
       HomeRepo().getSlider(),
       HomeRepo().getBestSellers(),
+=======
+        HomeRepo().getSlider(),
+        HomeRepo().getBestSellers(),
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
     ]);
 
     var slidersResponse = responses[0] as SliderResponse?;
@@ -34,8 +43,13 @@ class HomeCubit extends Cubit<HomeState> {
     }
   }
 
+<<<<<<< HEAD
   void onChangeSlider(int index) {
     yourActiveIndex = index;
+=======
+  void onChangeSlider(int index){
+    yourActiveIndex =index;
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
     emit(HomeSuccessState());
   }
 }

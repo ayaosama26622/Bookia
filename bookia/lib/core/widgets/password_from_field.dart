@@ -26,8 +26,27 @@ class _PasswordFromFieldState extends State<PasswordFromField> {
       controller: widget.controller,
       obscureText: obscureText,
 
+<<<<<<< HEAD
       validator:
           widget.validator ??
+=======
+<<<<<<< HEAD
+      validator:
+          widget.validator ??
+=======
+<<<<<<< HEAD
+      validator:
+          widget.validator ??
+=======
+<<<<<<< HEAD
+      validator:
+          widget.validator ??
+=======
+      validator: widget.validator ??
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
           (input) {
             if (input == null || input.isEmpty) {
               return 'Please enter your password';
@@ -46,9 +65,43 @@ class _PasswordFromFieldState extends State<PasswordFromField> {
               obscureText = !obscureText;
             });
           },
+<<<<<<< HEAD
           icon: Icon(obscureText ? Icons.visibility_off : Icons.remove_red_eye),
+=======
+<<<<<<< HEAD
+          icon: Icon(obscureText ? Icons.visibility_off : Icons.remove_red_eye),
+=======
+<<<<<<< HEAD
+          icon: Icon(obscureText ? Icons.visibility_off : Icons.remove_red_eye),
+=======
+<<<<<<< HEAD
+          icon: Icon(obscureText ? Icons.visibility_off : Icons.remove_red_eye),
+=======
+          icon: Icon(
+            obscureText ? Icons.visibility_off : Icons.remove_red_eye,
+          ),
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
         ),
       ),
     );
   }
+<<<<<<< HEAD
 }
+=======
+<<<<<<< HEAD
+}
+=======
+<<<<<<< HEAD
+}
+=======
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed

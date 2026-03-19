@@ -40,4 +40,8 @@ class HorizontalListShimmer extends StatelessWidget {
       ),
     );
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
