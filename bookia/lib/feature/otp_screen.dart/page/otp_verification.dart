@@ -31,7 +31,21 @@ class OtpVerification extends StatelessWidget {
 
         body: BlocConsumer<AuthCubit, AuthState>(
           listener: (context, state) {
+<<<<<<< HEAD
             if (state is OtpSuccessState) {
+=======
+<<<<<<< HEAD
+            if (state is OtpSuccessState) {
+=======
+<<<<<<< HEAD
+            if (state is OtpSuccessState) {
+=======
+
+            if (state is OtpSuccessState) {
+
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
               showDialog(
                 context: context,
                 builder: (context) => const AlertDialog(
@@ -39,12 +53,42 @@ class OtpVerification extends StatelessWidget {
                   content: Text("OTP Verified Successfully"),
                 ),
               );
+<<<<<<< HEAD
             } else if (state is AuthErrorState) {
               showMyDialog(context, state.message);
+=======
+<<<<<<< HEAD
+            } else if (state is AuthErrorState) {
+              showMyDialog(context, state.message);
+=======
+<<<<<<< HEAD
+            } else if (state is AuthErrorState) {
+              showErrorDialog(context, state.message);
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
             }
           },
 
           builder: (context, state) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+
+            }
+
+            else if (state is AuthErrorState) {
+              showErrorDialog(context, state.message);
+            }
+
+          },
+
+          builder: (context, state) {
+
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
             var cubit = context.read<AuthCubit>();
 
             return Padding(
@@ -55,7 +99,23 @@ class OtpVerification extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+<<<<<<< HEAD
                       Text("OTP Verification", style: TextStyles.headline),
+=======
+<<<<<<< HEAD
+                      Text("OTP Verification", style: TextStyles.headline),
+=======
+<<<<<<< HEAD
+                      Text("OTP Verification", style: TextStyles.headline),
+=======
+
+                      Text(
+                        "OTP Verification",
+                        style: TextStyles.headline,
+                      ),
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
 
                       const Gap(10),
 
@@ -68,7 +128,21 @@ class OtpVerification extends StatelessWidget {
 
                       const Gap(40),
 
+<<<<<<< HEAD
                       OtpField(controller: cubit.otpController),
+=======
+<<<<<<< HEAD
+                      OtpField(controller: cubit.otpController),
+=======
+<<<<<<< HEAD
+                      OtpField(controller: cubit.otpController),
+=======
+                      OtpField(
+                        controller: cubit.otpController,
+                      ),
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
 
                       const Gap(32),
 
@@ -76,12 +150,38 @@ class OtpVerification extends StatelessWidget {
                           ? const Center(child: CircularProgressIndicator())
                           : MainButton(
                               onPressed: () {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
                                 if (cubit.formKey.currentState!.validate()) {
                                   cubit.verifyOtp();
                                 }
                               },
+<<<<<<< HEAD
                               text: "Verify", bgColor: AppColor.primrycolor, minHeight: 56,
                             ),
+=======
+                              text: "Verify",
+                            ),
+<<<<<<< HEAD
+=======
+=======
+
+                                if (cubit.formKey.currentState!.validate()) {
+                                  cubit.verifyOtp();
+                                }
+
+                              },
+                              text: "Verify",
+                            ),
+
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
                     ],
                   ),
                 ),
@@ -95,11 +195,34 @@ class OtpVerification extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+<<<<<<< HEAD
               Text("Didn’t receive code?", style: TextStyles.body),
+=======
+<<<<<<< HEAD
+              Text("Didn’t receive code?", style: TextStyles.body),
+=======
+<<<<<<< HEAD
+              Text("Didn’t receive code?", style: TextStyles.body),
+=======
+
+              Text(
+                "Didn’t receive code?",
+                style: TextStyles.body,
+              ),
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
 
               const Gap(4),
 
               GestureDetector(
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
                 onTap: () {},
 
                 child: Text(
@@ -107,10 +230,42 @@ class OtpVerification extends StatelessWidget {
                   style: TextStyles.body.copyWith(color: AppColor.primrycolor),
                 ),
               ),
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+                onTap: () {
+
+                },
+
+                child: Text(
+                  "Resend",
+                  style: TextStyles.body.copyWith(
+                    color: AppColor.primrycolor,
+                  ),
+                ),
+              ),
+
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
             ],
           ),
         ),
       ),
     );
   }
+<<<<<<< HEAD
 }
+=======
+<<<<<<< HEAD
+}
+=======
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61

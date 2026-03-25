@@ -1,7 +1,30 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
 import 'package:bookia/core/constants/image_app.dart';
 import 'package:bookia/core/function/navigation.dart';
 import 'package:bookia/core/function/validation.dart';
 import 'package:bookia/core/routes/routes.dart';
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+=======
+import 'dart:developer';
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
+
+import 'package:bookia/core/constants/image_app.dart';
+import 'package:bookia/core/function/navigation.dart';
+import 'package:bookia/core/function/validation.dart';
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
 import 'package:bookia/core/styles/colors.dart';
 import 'package:bookia/core/styles/text.dart' show TextStyles;
 import 'package:bookia/core/widgets/custom_svg_picture.dart';
@@ -12,10 +35,33 @@ import 'package:bookia/core/widgets/password_from_field.dart';
 import 'package:bookia/feature/auth/presentation/cubit/auth_cubit.dart';
 import 'package:bookia/feature/auth/presentation/cubit/auth_state.dart';
 import 'package:bookia/feature/auth/presentation/widgets/sociallogin.dart';
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+import 'package:bookia/feature/main/main_app_screen.dart';
+=======
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gap/gap.dart';
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
 
@@ -34,12 +80,46 @@ class LoginScreen extends StatelessWidget {
         ),
         body: BlocConsumer<AuthCubit, AuthState>(
           listener: (context, state) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
             if (state is AuthSuccessState) {
               pushToBase(context, Routes.main);
             } else if (state is AuthErrorState) {
               pop(context);
+<<<<<<< HEAD
               showMyDialog(context, state.message);
             }
+=======
+<<<<<<< HEAD
+              showMyDialog(context, state.message);
+            }
+=======
+              showErrorDialog(context, state.message);
+            }
+=======
+              if (state is AuthSuccessState){
+<<<<<<< HEAD
+              pushToBase(context, MainAppScreen());
+        }else if (state is AuthErrorState){
+          pop(context);
+          showErrorDialog(context , state.message);
+        }
+        
+=======
+              log("success");
+        }
+        else if (state is AuthErrorState){
+          showErrorDialog(context , state.message);
+        }
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
           },
           builder: (context, state) {
             var cubit = context.read<AuthCubit>();
@@ -71,7 +151,19 @@ class LoginScreen extends StatelessWidget {
                       ),
                       Gap(16),
                       PasswordFromField(
+<<<<<<< HEAD
                         controller: cubit.passwordController,
+=======
+<<<<<<< HEAD
+                        controller: cubit.passwordController,
+=======
+<<<<<<< HEAD
+                        controller: cubit.passwordController,
+=======
+                        controller:cubit.passwordController,
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
                         hintText: "Enter your password",
                       ),
                       Gap(16),
@@ -93,11 +185,31 @@ class LoginScreen extends StatelessWidget {
                       Gap(32),
                       MainButton(
                         onPressed: () {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
                           if (cubit.formKey.currentState!.validate()) {
                             cubit.login();
                           }
                           ;
+<<<<<<< HEAD
                         }, text: '', bgColor: AppColor.primrycolor, minHeight: 56,
+=======
+<<<<<<< HEAD
+=======
+=======
+                          if (cubit.formKey.currentState!.validate()){
+                            cubit.login();
+                          } ;
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+                        },
+                        text: "Login",
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
                       ),
                       Gap(32),
                       sociallogin(),

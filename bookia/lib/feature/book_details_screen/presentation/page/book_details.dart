@@ -88,7 +88,11 @@ class BookDetailsScreen extends StatelessWidget {
                       minHeifht: 45,
                       beColor: AppColor.blackColor,
                       text: 'Add To Cart',
+<<<<<<< HEAD
                       onPressed: () {}, bgColor: AppColor.primrycolor, minHeight: 56,
+=======
+                      onPressed: () {},
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
                     ),
                   ],
                 ),

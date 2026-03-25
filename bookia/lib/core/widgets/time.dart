@@ -11,7 +11,27 @@ class ResendOtpTimer extends StatefulWidget {
 
 class _ResendOtpTimerState extends State<ResendOtpTimer> {
   Timer? _timer;
+<<<<<<< HEAD
   int _secondsRemaining = 120;
+=======
+<<<<<<< HEAD
+  int _secondsRemaining = 120;
+=======
+<<<<<<< HEAD
+  int _secondsRemaining = 120;
+=======
+<<<<<<< HEAD
+  int _secondsRemaining = 120;
+=======
+<<<<<<< HEAD
+  int _secondsRemaining = 120;
+=======
+  int _secondsRemaining = 120; 
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
   bool _canResend = false;
 
   @override
@@ -34,7 +54,27 @@ class _ResendOtpTimerState extends State<ResendOtpTimer> {
         });
       } else {
         setState(() {
+<<<<<<< HEAD
           _canResend = true;
+=======
+<<<<<<< HEAD
+          _canResend = true;
+=======
+<<<<<<< HEAD
+          _canResend = true;
+=======
+<<<<<<< HEAD
+          _canResend = true;
+=======
+<<<<<<< HEAD
+          _canResend = true;
+=======
+          _canResend = true; 
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
         });
         _timer?.cancel();
       }
@@ -59,12 +99,53 @@ class _ResendOtpTimerState extends State<ResendOtpTimer> {
       child: _canResend
           ? TextButton(
               onPressed: () {
+<<<<<<< HEAD
                 startTimer();
+=======
+<<<<<<< HEAD
+                startTimer();
+=======
+<<<<<<< HEAD
+                startTimer();
+=======
+<<<<<<< HEAD
+                startTimer();
+=======
+<<<<<<< HEAD
+                startTimer();
+=======
+                startTimer(); 
+                
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
               },
               child: const Text(
                 "Resend OTP",
                 style: TextStyle(
+<<<<<<< HEAD
                   color: AppColor.redColor,
+=======
+<<<<<<< HEAD
+                  color: AppColor.redColor,
+=======
+<<<<<<< HEAD
+                  color: AppColor.redColor,
+=======
+<<<<<<< HEAD
+                  color: AppColor.redColor,
+=======
+<<<<<<< HEAD
+                  color: AppColor.redColor,
+=======
+                  color:AppColor.redColor,
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
                   fontSize: 14,
                   fontWeight: FontWeight.bold,
                 ),
@@ -72,7 +153,30 @@ class _ResendOtpTimerState extends State<ResendOtpTimer> {
             )
           : Text(
               "Resend confirmation code ($timerText)",
+<<<<<<< HEAD
               style: const TextStyle(fontSize: 18, color: AppColor.blackColor),
+=======
+<<<<<<< HEAD
+              style: const TextStyle(fontSize: 18, color: AppColor.blackColor),
+=======
+<<<<<<< HEAD
+              style: const TextStyle(fontSize: 18, color: AppColor.blackColor),
+=======
+<<<<<<< HEAD
+              style: const TextStyle(fontSize: 18, color: AppColor.blackColor),
+=======
+<<<<<<< HEAD
+              style: const TextStyle(fontSize: 18, color: AppColor.blackColor),
+=======
+              style: const TextStyle(
+                fontSize: 18,
+                color: AppColor.blackColor,
+              ),
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
             ),
     );
   }

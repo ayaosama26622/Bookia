@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 import 'package:bookia/core/widgets/shimmer/book_card_shimmer.dart';
+=======
+<<<<<<< HEAD
+import 'package:bookia/core/widgets/shimmer/book_card_shimmer.dart';
+=======
+  import 'package:bookia/core/widgets/shimmer/book_card_shimmer.dart';
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
 import 'package:flutter/widgets.dart';
 
 class GridShimmer extends StatelessWidget {
@@ -9,7 +17,14 @@ class GridShimmer extends StatelessWidget {
     this.childAspectRatio = 0.65,
     this.crossAxisSpacing = 15,
     this.mainAxisSpacing = 15,
+<<<<<<< HEAD
     this.shrinkWrap = true,
+=======
+<<<<<<< HEAD
+    this.shrinkWrap = true,
+=======
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
   });
 
   final int itemCount;
@@ -17,13 +32,28 @@ class GridShimmer extends StatelessWidget {
   final double childAspectRatio;
   final double crossAxisSpacing;
   final double mainAxisSpacing;
+<<<<<<< HEAD
   final bool shrinkWrap;
+=======
+<<<<<<< HEAD
+  final bool shrinkWrap;
+=======
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
 
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
       physics: const NeverScrollableScrollPhysics(),
+<<<<<<< HEAD
       shrinkWrap: shrinkWrap,
+=======
+<<<<<<< HEAD
+      shrinkWrap: shrinkWrap,
+=======
+      shrinkWrap: true,
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: crossAxisCount,
         childAspectRatio: childAspectRatio,
@@ -36,4 +66,12 @@ class GridShimmer extends StatelessWidget {
       },
     );
   }
+<<<<<<< HEAD
 }
+=======
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61

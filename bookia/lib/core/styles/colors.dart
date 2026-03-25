@@ -10,4 +10,29 @@ abstract class AppColor {
   static const Color cardColor = Color(0XFFF5EFE1);
   static const Color redColor = Color(0XFFF51212);
   static const Color fieldColor = Color(0XFFF7F8F9);
+<<<<<<< HEAD
 }
+=======
+<<<<<<< HEAD
+}
+=======
+<<<<<<< HEAD
+}
+=======
+<<<<<<< HEAD
+}
+=======
+<<<<<<< HEAD
+}
+=======
+  
+  
+
+
+
+}
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61

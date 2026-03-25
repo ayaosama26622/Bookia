@@ -54,7 +54,21 @@ class AuthCubit extends Cubit<AuthState> {
     emit(AuthLoadingState());
 
     var response = await AuthRepo.forget(
+<<<<<<< HEAD
       RegisterParemeter(email: emailController.text),
+=======
+<<<<<<< HEAD
+      RegisterParemeter(email: emailController.text),
+=======
+<<<<<<< HEAD
+      RegisterParemeter(email: emailController.text),
+=======
+      RegisterParemeter(
+        email: emailController.text,
+      ),
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
     );
 
     if (response != null) {
@@ -68,7 +82,21 @@ class AuthCubit extends Cubit<AuthState> {
     emit(AuthLoadingState());
 
     var response = await AuthRepo.verifyOtp(
+<<<<<<< HEAD
       RegisterParemeter(otp: otpController.text),
+=======
+<<<<<<< HEAD
+      RegisterParemeter(otp: otpController.text),
+=======
+<<<<<<< HEAD
+      RegisterParemeter(otp: otpController.text),
+=======
+      RegisterParemeter(
+        otp: otpController.text,
+      ),
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
     );
 
     if (response != null) {
@@ -94,4 +122,16 @@ class AuthCubit extends Cubit<AuthState> {
       emit(AuthErrorState(message: "Failed to reset password"));
     }
   }
+<<<<<<< HEAD
 }
+=======
+<<<<<<< HEAD
+}
+=======
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61

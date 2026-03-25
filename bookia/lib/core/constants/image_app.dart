@@ -1,18 +1,117 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
 abstract class AppImage {
   static const String logo = 'assets/image/logo.svg';
   static const String imagewelcome = 'assets/image/image welcome.png';
   static const String back = 'assets/image/back.svg';
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
   static const String Sticker = 'assets/image/Sticker.svg';
   static const String best1 = 'assets/image/best1.png';
   static const String best2 = 'assets/image/best2.png';
   static const String background = 'assets/image/background.png';
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
   static const String detail = 'assets/image/detail.png';
 
   static const String cib_apple = 'assets/icone/cib_apple.svg';
   static const String google = 'assets/icone/google.svg';
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+  static const String detail = 'assets/image/detail.png';
+
+=======
+  
+=======
+<<<<<<< HEAD
+  static const String Sticker = 'assets/image/Sticker.svg';
+
+  static const String cib_apple = 'assets/icone/cib_apple.svg';
+  static const String google = 'assets/icone/google.svg';
+}
+=======
+
+
+
+
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+
+
+  static const String cib_apple = 'assets/icone/cib_apple.svg';
+  static const String google = 'assets/icone/google.svg';
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
   static const String home = 'assets/icone/Home.svg';
   static const String cart = 'assets/icone/cart.svg';
   static const String save = 'assets/icone/save.svg';
   static const String profile = 'assets/icone/Profile.svg';
   static const String search = 'assets/icone/search.svg';
+<<<<<<< HEAD
 }
+=======
+<<<<<<< HEAD
+}
+=======
+<<<<<<< HEAD
+}
+=======
+
+}
+=======
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+ 
+}
+
+
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61

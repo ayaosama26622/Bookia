@@ -1,15 +1,26 @@
 import 'data.dart';
 
+<<<<<<< HEAD
 class BestSellerBooksResponse {
+=======
+class BestSellerBooksRespons {
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
   Data? data;
   String? message;
   List<dynamic>? error;
   int? status;
 
+<<<<<<< HEAD
   BestSellerBooksResponse({this.data, this.message, this.error, this.status});
 
   factory BestSellerBooksResponse.fromJson(Map<String, dynamic> json) {
     return BestSellerBooksResponse(
+=======
+  BestSellerBooksRespons({this.data, this.message, this.error, this.status});
+
+  factory BestSellerBooksRespons.fromJson(Map<String, dynamic> json) {
+    return BestSellerBooksRespons(
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
       data: json['data'] == null
           ? null
           : Data.fromJson(json['data'] as Map<String, dynamic>),
@@ -25,4 +36,8 @@ class BestSellerBooksResponse {
     'error': error,
     'status': status,
   };
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61

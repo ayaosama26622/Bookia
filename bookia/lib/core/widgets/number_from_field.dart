@@ -7,6 +7,22 @@ class NumberFromField extends StatelessWidget {
     this.hintText,
     this.validator,
     this.keyboardType,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
   });
 
   final String? hintText;
@@ -17,8 +33,37 @@ class NumberFromField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFormField(
       keyboardType: TextInputType.number,
+<<<<<<< HEAD
       inputFormatters: [_PhoneMaskFormatter()],
       decoration: InputDecoration(hintText: hintText),
+=======
+<<<<<<< HEAD
+      inputFormatters: [_PhoneMaskFormatter()],
+      decoration: InputDecoration(hintText: hintText),
+=======
+<<<<<<< HEAD
+      inputFormatters: [_PhoneMaskFormatter()],
+      decoration: InputDecoration(hintText: hintText),
+=======
+<<<<<<< HEAD
+      inputFormatters: [_PhoneMaskFormatter()],
+      decoration: InputDecoration(hintText: hintText),
+=======
+<<<<<<< HEAD
+      inputFormatters: [_PhoneMaskFormatter()],
+      decoration: InputDecoration(hintText: hintText),
+=======
+      inputFormatters: [
+        _PhoneMaskFormatter(),
+      ],
+      decoration: InputDecoration(
+        hintText: hintText,
+      ),
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
       validator: validator,
     );
   }
@@ -29,6 +74,19 @@ class _PhoneMaskFormatter extends TextInputFormatter {
 
   @override
   TextEditingValue formatEditUpdate(
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
     TextEditingValue oldValue,
     TextEditingValue newValue,
   ) {
@@ -40,6 +98,37 @@ class _PhoneMaskFormatter extends TextInputFormatter {
       }
     } else {
       final lastChar = newText.isNotEmpty ? newText[newText.length - 1] : '';
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+      TextEditingValue oldValue,
+      TextEditingValue newValue,
+      ) {
+    
+    final newText = newValue.text;
+
+   
+    if (newText.length < oldValue.text.length) {
+      if (realNumber.isNotEmpty) {
+        realNumber =
+            realNumber.substring(0, realNumber.length - 1);
+      }
+    } else {
+ 
+      final lastChar = newText.isNotEmpty
+          ? newText[newText.length - 1]
+          : '';
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
 
       if (RegExp(r'[0-9]').hasMatch(lastChar)) {
         if (realNumber.length < 11) {
@@ -48,6 +137,22 @@ class _PhoneMaskFormatter extends TextInputFormatter {
       }
     }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+  
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
     String masked = '';
     for (int i = 0; i < realNumber.length; i++) {
       if (i < 2) {
@@ -59,7 +164,28 @@ class _PhoneMaskFormatter extends TextInputFormatter {
 
     return TextEditingValue(
       text: masked,
+<<<<<<< HEAD
       selection: TextSelection.collapsed(offset: masked.length),
+=======
+<<<<<<< HEAD
+      selection: TextSelection.collapsed(offset: masked.length),
+=======
+<<<<<<< HEAD
+      selection: TextSelection.collapsed(offset: masked.length),
+=======
+<<<<<<< HEAD
+      selection: TextSelection.collapsed(offset: masked.length),
+=======
+<<<<<<< HEAD
+      selection: TextSelection.collapsed(offset: masked.length),
+=======
+      selection:
+          TextSelection.collapsed(offset: masked.length),
+>>>>>>> d9af705c563dfe4c090ebea5ccc61c2b1776623f
+>>>>>>> d1827b30a808868828cdbf677fee123ad1dfb2ce
+>>>>>>> e58a3f3a961d6c3df90a78a3863d84f7874593d4
+>>>>>>> 3c5443b31a0b84af531cd6af6a55aa48bc7d83ed
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
     );
   }
 }

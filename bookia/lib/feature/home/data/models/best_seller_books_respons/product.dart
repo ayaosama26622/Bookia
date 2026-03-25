@@ -48,4 +48,8 @@ class Product {
     'image': image,
     'category': category,
   };
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61

@@ -1,12 +1,21 @@
 import 'package:bookia/core/routes/routes.dart';
 import 'package:bookia/feature/auth/presentation/page/login_screen.dart';
 import 'package:bookia/feature/auth/presentation/page/signup_screen.dart';
+<<<<<<< HEAD
+=======
+import 'package:bookia/feature/book_details_screen/presentation/widgets/wishlist_action/cubit/wishlist_action_cubit.dart';
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
 import 'package:bookia/feature/book_details_screen/presentation/page/book_details.dart';
 import 'package:bookia/feature/home/data/models/best_seller_books_respons/product.dart';
 import 'package:bookia/feature/home/presentation/page/home_screen.dart';
 import 'package:bookia/feature/intro/splash/splash_screen.dart';
 import 'package:bookia/feature/intro/welcome/welcome_screen.dart';
 import 'package:bookia/feature/main/main_app_screen.dart';
+<<<<<<< HEAD
+=======
+import 'package:bookia/feature/wishlist/presentation/page/wishlist_screen.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+>>>>>>> f97b478be1d177a26aee33c69d649c845b54bc61
 import 'package:go_router/go_router.dart';
 
 class AppRoutes {
